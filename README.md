@@ -1,6 +1,6 @@
 # copy-to-clipboard
 
-This is an adalo custom component that allows you copy text to the clipboard with custom styles. 
+This is an adalo custom component that allows you to copy text to the clipboard with custom styles. 
 
 ## Screenshots 
 
