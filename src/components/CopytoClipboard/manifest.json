@@ -15,16 +15,16 @@
       "default": "Copy to Clipboard"
     },
     {
-      "name": "btncolor",
-      "displayName": "Button Color",
-      "type": "color",
-      "default": "@primary"
-    },
-    {
       "name": "btntextcolor",
       "displayName": "Text Color",
       "type": "color",
       "default": "@text"
+    },
+    {
+      "name": "btncolor",
+      "displayName": "Button Color",
+      "type": "color",
+      "default": "@primary"
     },
     {
       "name": "btnrounding",
@@ -35,8 +35,33 @@
     },
     {
       "name": "btnshadow",
-      "displayName": "Shadow?",
+      "displayName": "Enable Shadow?",
       "type": "boolean"
+    },
+    {
+      "name": "enablebtnBorder",
+      "displayName": "Enable Border?",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "btnborderColor",
+      "displayName": "Border Color",
+      "type": "color",
+      "default": "#e0e0e0",
+      "enabled": {
+        "enablebtnBorder" : true
+      }
+    },
+    {
+      "name": "btnborderWidth",
+      "displayName": "Border Size",
+      "type": "number",
+      "default": 1,
+      "control": { "type": "slider", "max": 5, "min": 0},
+      "enabled": { 
+        "enablebtnBorder" : true 
+      }
     },
     {
       "name": "copyText",

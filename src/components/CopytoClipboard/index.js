@@ -30,14 +30,17 @@ class CopytoClipboard extends Component {
 
     const {
       btntext,
-      btntextcolor,
       btncolor,
+      btntextcolor,
       btnrounding,
-      btnshadow
+      btnshadow,
+      enablebtnBorder,
+      btnborderColor,
+      btnborderWidth
     } = this.props;
 
     const { smText } = this.props.actions;
-    
+
     const styles = StyleSheet.create({
       wrapper: {
         display: 'flex',
@@ -49,6 +52,8 @@ class CopytoClipboard extends Component {
         alignItems: 'center',
         padding: 10,
         borderRadius: btnrounding,
+        borderWidth: enablebtnBorder ? btnborderWidth : null,
+        borderColor: enablebtnBorder ? btnborderColor : null,
         backgroundColor: btncolor,
         // shadow for button
         shadowRadius: btnshadow ? 1 : null,
