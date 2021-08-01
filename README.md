@@ -18,6 +18,4 @@ This is an adalo custom component that allows you copy text to the clipboard wit
 
 Gif: 
 
-![image](https://user-images.githubusercontent.com/67211937/127777772-80e66f09-01b1-4370-9e3e-795f336cf6e2.png)
-
-
+![Copy to Clipboard ](https://user-images.githubusercontent.com/67211937/127777872-a71f70f9-b64b-4619-a8c3-eabf57fc945c.gif)
