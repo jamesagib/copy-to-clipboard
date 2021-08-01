@@ -1,0 +1,75 @@
+{
+  "displayName": "Copy to Clipboard",
+  "defaultWidth": 343,
+  "defaultHeight": 24,
+  "resizeX": true,
+  "resizeY": false,
+  "components": "./index.js",
+  "icon": "./thumbnail.png",
+
+  "props": [
+    {
+      "name": "btntext",
+      "displayName": "Button Text",
+      "type": "text",
+      "default": "Copy to Clipboard"
+    },
+    {
+      "name": "btncolor",
+      "displayName": "Button Color",
+      "type": "color",
+      "default": "@primary"
+    },
+    {
+      "name": "btntextcolor",
+      "displayName": "Text Color",
+      "type": "color",
+      "default": "@text"
+    },
+    {
+      "name": "btnrounding",
+      "displayName": "Rounding",
+      "type": "number",
+      "default": 4,
+      "control": { "type": "slider", "max": 18, "min": 0}
+    },
+    {
+      "name": "btnshadow",
+      "displayName": "Shadow?",
+      "type": "boolean"
+    },
+    {
+      "name": "copyText",
+      "displayName": "Text to Copy",
+      "type": "text",
+      "default": "This text is going to be copied."
+    }
+  ],
+  "childComponents": [
+    {
+      "name": "actions",
+      "displayName": "Success Message",
+      "props": [
+        {
+          "name": "smText",
+          "displayName": "Text",
+          "type": "text",
+          "default": "Copied!",
+          "helpText": "All styles for the success message will be the same as the button."
+        },
+        {
+          "name": "smduration",
+          "displayName": "Duration (milliseconds)",
+          "type": "number",
+          "default": "1000",
+          "helpText": "Time (in milliseconds) to show the Success Message. (1000 is recommended)"
+        },
+        {
+          "name": "useActions",
+          "displayName": "Additional Actions After Text Copied to Clipboard",
+          "type": "action"
+        }
+      ]
+    }
+  ]
+}

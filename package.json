@@ -1,0 +1,35 @@
+{
+  "name": "copytoclipboard",
+  "description": "Copy to text to clipboard with customization options.",
+  "version": "1.2.3",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "James Agib",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./logo.png",
+    "displayName": "copytoclipboard",
+    "components": [
+      {
+        "name": "CopytoClipboard",
+        "manifest": "./src/components/CopytoClipboard/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "0.0.42",
+    "react": "^16.14.0",
+    "react-art": "^16.13.1",
+    "react-dom": "^16.14.0",
+    "react-native-web": "^0.9.13"
+  },
+  "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.8.1",
+    "@react-native-community/clipboard": "^1.5.1",
+    "react-native-vector-icons": "^8.1.0"
+  }
+}
