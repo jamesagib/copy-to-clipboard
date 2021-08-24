@@ -1,7 +1,7 @@
 {
   "name": "copytoclipboard",
-  "description": "Copy to text to clipboard with customization options.",
-  "version": "1.2.16",
+  "description": "Enable users to copy text to the clipboard.",
+  "version": "1.4.3",
   "main": "index.js",
   "license": "ISC",
   "author": "James Agib",
@@ -28,8 +28,6 @@
     "react-native-web": "^0.9.13"
   },
   "dependencies": {
-    "@react-native-clipboard/clipboard": "^1.8.1",
-    "@react-native-community/clipboard": "^1.5.1",
-    "react-native-vector-icons": "^8.1.0"
+    "@react-native-clipboard/clipboard": "^1.8.1"
   }
 }

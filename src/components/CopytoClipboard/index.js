@@ -36,17 +36,17 @@ class CopytoClipboard extends Component {
       btnshadow,
       enablebtnBorder,
       btnborderColor,
-      btnborderWidth
+      btnborderWidth,
+      imageURL
     } = this.props;
 
-    const { smText } = this.props.actions;
+    const { successText } = this.props.actions;
 
     const styles = StyleSheet.create({
       wrapper: {
         display: 'flex',
         alignItems: 'stretch',
         justifyContent: 'center',
-        alignself: 'stretch'
       },
       button: {
         alignItems: 'center',
@@ -69,13 +69,18 @@ class CopytoClipboard extends Component {
       text: {
         color: btntextcolor,
       },
+      image: {
+        width: 200,
+        height: 200,
+        resizeMode: 'contain'
+      },
     });
-
+      
     return (
       <View style={styles.wrapper}>
         <TouchableOpacity style={styles.button} onPress={() => { this.onCopyText(); this.handleSubmit();}}>
           <Text style={styles.text}>
-            {this.state.copied ? smText : btntext}
+            {this.state.copied ? successText : btntext} 
           </Text>
         </TouchableOpacity>
      </View>

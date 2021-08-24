@@ -76,18 +76,17 @@
       "displayName": "Success Message",
       "props": [
         {
-          "name": "smText",
+          "name": "successText",
           "displayName": "Text",
           "type": "text",
-          "default": "Copied!",
-          "helpText": "All styles for the success message will be the same as the button."
+          "default": "Copied!"
         },
         {
           "name": "smduration",
           "displayName": "Duration (milliseconds)",
           "type": "number",
           "default": "1000",
-          "helpText": "Time (in milliseconds) to show the Success Message. (1000 is recommended)"
+          "helpText": "Time (in milliseconds) to show the Success Message."
         },
         {
           "name": "useActions",
