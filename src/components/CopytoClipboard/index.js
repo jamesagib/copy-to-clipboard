@@ -3,7 +3,6 @@ import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
 
 class CopytoClipboard extends Component {
-
   constructor(props) {
     super(props);
     this.state = { copied: false };
@@ -37,7 +36,6 @@ class CopytoClipboard extends Component {
       enablebtnBorder,
       btnborderColor,
       btnborderWidth,
-      imageURL
     } = this.props;
 
     const { successText } = this.props.actions;
@@ -45,11 +43,10 @@ class CopytoClipboard extends Component {
     const styles = StyleSheet.create({
       wrapper: {
         display: 'flex',
-        alignItems: 'stretch',
-        justifyContent: 'center',
-      },
-      button: {
         alignItems: 'center',
+        justifyContent: 'center',
+      }, 
+      button: {
         padding: 10,
         borderRadius: btnrounding,
         borderWidth: enablebtnBorder ? btnborderWidth : null,
@@ -68,11 +65,6 @@ class CopytoClipboard extends Component {
       },
       text: {
         color: btntextcolor,
-      },
-      image: {
-        width: 200,
-        height: 200,
-        resizeMode: 'contain'
       },
     });
       

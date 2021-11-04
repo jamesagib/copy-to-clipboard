@@ -1,7 +1,7 @@
 {
   "name": "copytoclipboard",
   "description": "Enable users to copy text to the clipboard.",
-  "version": "1.4.3",
+  "version": "1.4.17",
   "main": "index.js",
   "license": "ISC",
   "author": "James Agib",

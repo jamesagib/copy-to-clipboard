@@ -85,7 +85,7 @@
           "name": "smduration",
           "displayName": "Duration (milliseconds)",
           "type": "number",
-          "default": "1000",
+          "default": 1000,
           "helpText": "Time (in milliseconds) to show the Success Message."
         },
         {
